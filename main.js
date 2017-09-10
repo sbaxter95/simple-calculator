@@ -8,20 +8,20 @@ if (type === 's') {
 	num1 = parseFloat(num1);
 	num2 = parseFloat(num2);
 	if (operation === 'a') {
-		total = num1 + num2;
+		total = (num1 + num2).toFixed(2);
 	} else if (operation === 's') {
-		total = num1 - num2;
+		total = (num1 - num2).toFixed(2);
 	} else if (operation === 'm') {
-		total = num1 * num2;
+		total = (num1 * num2).toFixed(2);
 	} else {
-		total = num1 / num2;
+		total = (num1 / num2).toFixed(2);
 	} 
 	alert(total);
 } else {
 	var answer = 0;
 	var task = prompt('Would you like to find the s(quare root) or the p(ower) of a number?');
 	var num = prompt('Enter a number');
-	num = parseFloat(num).toFixed(2);
+	num = parseFloat(num);
 	if (task === 's') {
 		answer = Math.sqrt(num).toFixed(2);
 	} else {
