@@ -15,17 +15,17 @@ if (type === 's') {
 		total = num1 * num2;
 	} else {
 		total = num1 / num2;
-	}
+	} 
 	alert(total);
 } else {
 	var answer = 0;
 	var task = prompt('Would you like to find the s(quare root) or the p(ower) of a number?');
 	var num = prompt('Enter a number');
-	num = parseFloat(num);
+	num = parseFloat(num).toFixed(2);
 	if (task === 's') {
-		answer = Math.sqrt(num);
+		answer = Math.sqrt(num).toFixed(2);
 	} else {
-		answer = Math.pow(num, 2);
+		answer = Math.pow(num, 2).toFixed(2);
 	}
 	alert(answer);
 }
