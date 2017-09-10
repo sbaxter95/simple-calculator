@@ -9,15 +9,14 @@ if (type === 's') {
 	num2 = parseFloat(num2);
 	if (operation === 'a') {
 	total = num1 + num2;
-} else if (operation === 's') {
+	} else if (operation === 's') {
 	total = num1 - num2;
-} else if (operation === 'm') {
+	} else if (operation === 'm') {
 	total = num1 * num2;
-} else {
+	} else {
 	total = num1 / num2;
-}
+	}
+	alert(total);
 } else {
 
 }
-
-alert(total);
